@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Skkvote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/mypage.css">
+    <script src="./js/mypage.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bignumber.js/8.0.1/bignumber.min.js">
+</script>
+</head>
+<body>
+    <div class="mypage">
+        <div class= "name"><h1>안녕하세요 ㅇㅇ님!</h1></div>
+        <p><script language="javascript">
+                temp=location.href.split("=");
+                data=temp[1].split(":");
+                userkey=data[0];
+                document.write(userkey);</script></p>
+          <div class="wallet_info">
+              <p>지갑잔액:</p>
+              <p id="spt"></p>
+              <button id="payment" onclick="check(userkey);">잔액확인하기</button>
+          </div>
+          <div>
+              <p>transaction log</p>
+              <div id='transaction_log'>
+                //트랜잭션 주소 가져오기
+              </div>
+          </div>
+    </div>
+</body>
+</html>
